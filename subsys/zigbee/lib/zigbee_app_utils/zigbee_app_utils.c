@@ -349,7 +349,7 @@ zb_ret_t zigbee_default_signal_handler(zb_bufid_t bufid)
 			}
 		}
 		if (!IS_ENABLED(CONFIG_ZIGBEE_ROLE_END_DEVICE)) {
-			zb_enable_auto_pan_id_conflict_resolution(ZB_FALSE);
+			// zb_enable_auto_pan_id_conflict_resolution(ZB_FALSE);
 		}
 		break;
 
@@ -432,7 +432,7 @@ zb_ret_t zigbee_default_signal_handler(zb_bufid_t bufid)
 			LOG_ERR("Unable to leave network (status: %d)", status);
 		}
 		if (!IS_ENABLED(CONFIG_ZIGBEE_ROLE_END_DEVICE)) {
-			zb_enable_auto_pan_id_conflict_resolution(ZB_FALSE);
+			// zb_enable_auto_pan_id_conflict_resolution(ZB_FALSE);
 		}
 		break;
 
